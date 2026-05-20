@@ -58,8 +58,8 @@
     flex-direction: column;
     border: 2px solid var(--bg-color-background);
     border-radius: 10px;
-    height: 450px;
-    width: 250px;
+    height: 550px;
+    width: 350px;
     background-color: var(--bg-color-background-header);
 }
 
@@ -84,4 +84,27 @@
 .book-img > img  {
     height: 80px;
     width: 80px;
+}
+
+.book-body{
+    display: flex;
+    flex-direction: column;
+    border-bottom: var(--bg-color-highlight-color) solid 2px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.book-body-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.book-body-content-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 5px;
 }
