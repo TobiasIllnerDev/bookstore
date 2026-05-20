@@ -1,0 +1,3 @@
+function getBookTemplate(index){
+    return ``
+}

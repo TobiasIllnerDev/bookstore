@@ -11,15 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     background-color: var(--bg-color-light-blue);
     border-radius: 50%;
 }
 
 .header-img > img {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
@@ -43,4 +43,45 @@
 
 .small-text {
     font-size: 16px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.book-section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--bg-color-background);
+    border-radius: 10px;
+    height: 450px;
+    width: 250px;
+    background-color: var(--bg-color-background-header);
+}
+
+.book-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.book-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var( --bg-color-div-background);
+    border-top: var(--bg-color-highlight-color) solid 2px;
+    border-bottom: var(--bg-color-highlight-color) solid 2px;
+}
+
+.book-img > img  {
+    height: 80px;
+    width: 80px;
 }
