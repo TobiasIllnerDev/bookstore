@@ -1,0 +1,22 @@
+.nav-bar {
+    background-color: var(--bg-color-background-header);
+    height: 100px;
+    width: 100%; 
+    padding: 12px;
+}
+
+.header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    background-color: var(--bg-color-light-blue);
+    border-radius: 50%;
+}
+
+.header-img > img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}

@@ -13,9 +13,3 @@ body {
     background-color: var(--bg-color-background);
     color: var(--bg-color-text-color);
 }
-
-header {
-   background-color: var(--bg-color-background-header);
-   height: 100px;
-   width: 100%; 
-}
