@@ -1,4 +1,6 @@
 .nav-bar {
+    display: flex;
+    align-items: center;
     background-color: var(--bg-color-background-header);
     height: 100px;
     width: 100%; 
@@ -19,4 +21,26 @@
     height: 75px;
     width: 75px;
     border-radius: 50%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    text-align: center;
+}
+
+.red-text {
+    color: rgb(221, 113, 74);
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.bigger-text {
+    font-size: 24px;
+}
+
+.small-text {
+    font-size: 16px;
 }
