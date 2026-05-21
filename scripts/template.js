@@ -31,9 +31,9 @@ function getBookTemplate(index){
               <p>:</p>
             </div>
             <div class="p-element">
-              <p>Clara Meer</p>
-              <p>Clara Meer</p>
-              <p>Clara Meer</p>
+              <p>${books[index].author}</p>
+              <p>${books[index].publishedYear}</p>
+              <p>${books[index].genre}</p>
             </div>
           </div>
         </div>
