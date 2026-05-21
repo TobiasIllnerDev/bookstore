@@ -26,16 +26,13 @@ function renderComments(bookIndex) {
 
 function addComment(bookIndex) {
     let inputRef = document.getElementById(`new-comment-${bookIndex}`);
-
     if (inputRef.value != "") {
         books[bookIndex].comments.push({
             name: "Tobias",
             comment: inputRef.value
         });
     }
-
     saveToLocalStorage();
-
     renderNotes();
     inputRef.value = "";
 }
@@ -53,23 +50,30 @@ function getFromLocalStorage() {
 }
 
 function bookToFavorite(index) {
+    toggleLike(index);
+    updateHeart(index);
+    saveToLocalStorage();
+    renderNotes();
+}
+
+function updateHeart(index) {
     let heartRef = document.getElementById(`book-favorite-${index}`);
 
-    if (books[index].liked == false) {
-        books[index].likes += 1;
-        books[index].liked = true;
-
+    if (books[index].liked) {
         heartRef.classList.remove("blank-heart");
         heartRef.classList.add("red-heart");
-
     } else {
-        books[index].likes -= 1;
-        books[index].liked = false;
-
         heartRef.classList.remove("red-heart");
         heartRef.classList.add("blank-heart");
     }
+}
 
-    saveToLocalStorage();
-    renderNotes();
+function toggleLike(index) {
+    if (books[index].liked) {
+        books[index].likes--;
+        books[index].liked = false;
+    } else {
+        books[index].likes++;
+        books[index].liked = true;
+    }
 }
