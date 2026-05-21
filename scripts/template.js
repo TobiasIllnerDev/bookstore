@@ -12,11 +12,11 @@ function getBookTemplate(index){
         <div class="book-body">
           <div class="book-body-content">
             <div>
-              <p class="red-money-text">19,99</p>
+              <p class="red-money-text">${books[index].price} €</p>
             </div>
-            <div>
-              <p>1250</p>
-              <img src="" alt="" />
+            <div class="liked-section">
+              <p>${books[index].likes}</p>
+              <img src="../assets/icons/heart.png" alt="Heart" class="img-class"/>
             </div>
           </div>
           <div class="book-body-content-bottom">
