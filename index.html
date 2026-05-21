@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./assets/css/standard.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="style.css" />
-
+    <script src="./scripts/template.js"></script>
     <script src="./scripts/array.js"></script>
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="renderNotes()">
     <header>
       <nav class="nav-bar">
         <div class="header-img">
@@ -26,47 +26,6 @@
       </nav>
     </header>
 
-    <section class="main-section">
-      <div class="book-section">
-        <div class="book-header">
-          <p>Überschrift</p>
-        </div>
-
-        <div class="book-img">
-          <img src="./assets/imgs/book.png" alt="Book" />
-        </div>
-
-        <div class="book-body">
-          <div class="book-body-content">
-            <div>
-              <p class="red-money-text">19,99</p>
-            </div>
-            <div>
-              <p>1250</p>
-              <img src="" alt="" />
-            </div>
-          </div>
-          <div class="book-body-content-bottom">
-            <div class="p-element">
-              <p>Author</p>
-              <p>Author</p>
-              <p>Author</p>
-            </div>
-            <div class="p-element">
-              <p>:</p>
-              <p>:</p>
-              <p>:</p>
-            </div>
-            <div class="p-element">
-              <p>Clara Meer</p>
-              <p>Clara Meer</p>
-              <p>Clara Meer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="book-feedback"></div>
-      </div>
-    </section>
+    <section class="main-section" id="imput-section"></section>
   </body>
 </html>

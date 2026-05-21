@@ -9,7 +9,6 @@ a {
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--bg-color-background);
     color: var(--bg-color-text-color);
 }

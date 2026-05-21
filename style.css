@@ -52,6 +52,7 @@
 
 .main-section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -107,13 +108,13 @@
 }
 
 .book-body-content > div > p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .book-body-content-bottom {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px 10px;
     gap: 5px;
+    font-size: 16px;
 }
