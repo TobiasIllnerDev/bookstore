@@ -37,7 +37,20 @@ function getBookTemplate(index){
             </div>
           </div>
         </div>
-
-        <div class="book-feedback" id="book-feedback-section"></div>
+        <div class="book-feedback" id="book-feedback-section-${index}"></div>
       </section>`
+}
+
+function getCommentTemplate(bookIndex, commentIndex) {
+    return `
+        <div>
+            <p><strong>${books[bookIndex].comments[commentIndex].name}</strong></p>
+            <p>${books[bookIndex].comments[commentIndex].comment}</p>
+        </div>
+    `;
+}
+
+function getNewCommentTemplate() {
+    return `<input type="text" title="Hallo" />`
+      
 }
