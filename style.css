@@ -57,6 +57,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    position: relative;
+    gap: 20px;
 }
 
 .book-section {
@@ -67,6 +69,10 @@
     height: 550px;
     width: 350px;
     background-color: var(--bg-color-background-header);
+}
+
+.book-feedback {
+    margin-top: auto;
 }
 
 .book-header {
@@ -102,6 +108,7 @@
 
 .img-class {
     background-color: none;
+    cursor: pointer;
     height: 20px;
     width: 20px;
 }
@@ -129,4 +136,30 @@
     padding: 40px 10px 0px 10px;
     gap: 5px;
     font-size: 16px;
+}
+
+.comment-text {
+    display: flex;
+    align-items: center;
+    text-align: flex-start;
+    gap: 10px;
+    padding: 5px;
+}
+
+.new-comment {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    gap: 8px;
+}
+
+input[type=text] {
+    background-color: var(--bg-color-div-background);
+    color: white;
+    width: 90%;
+    border: none;
+}
+
+input::placeholder {
+    color: white;
 }

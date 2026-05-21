@@ -14,10 +14,7 @@ function renderComments(bookIndex) {
     for (let i = 0; i < books[bookIndex].comments.length; i++) {
         commentRef.innerHTML += getCommentTemplate(bookIndex, i);
     }
+
+     commentRef.innerHTML += getNewCommentTemplate(bookIndex);
 }
 
-function renderNewComments() {
-    let newCommentRef = document.getElementById('new-comments');
-    newCommentRef.innerHTML = '';
-    newCommentRef.innerHTML += getNewCommentTemplate();
-}
