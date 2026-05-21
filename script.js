@@ -1,3 +1,8 @@
+function init() {
+    getFromLocalStorage();
+    renderNotes();
+}
+
 function renderNotes() {
     let contentRef = document.getElementById('imput-section');
     contentRef.innerHTML = '';
@@ -18,3 +23,31 @@ function renderComments(bookIndex) {
      commentRef.innerHTML += getNewCommentTemplate(bookIndex);
 }
 
+
+function addComment(bookIndex, commentIndex) {
+    let inputRef = document.getElementById(`new-comment-${bookIndex}`);
+
+    if (inputRef.value != "") {
+        books[bookIndex].comments.push({
+            name: "Tobias",
+            comment: inputRef.value
+        });
+    }
+
+    saveToLocalStorage();
+
+    renderNotes();
+    inputRef.value = "";
+}
+
+function saveToLocalStorage() {
+    localStorage.setItem("books", JSON.stringify(books))
+}
+
+function getFromLocalStorage() {
+    let myArr = JSON.parse(localStorage.getItem("books"));
+
+    if (myArr) {
+        books = myArr;
+    }
+}
