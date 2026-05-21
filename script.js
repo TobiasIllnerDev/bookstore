@@ -23,7 +23,6 @@ function renderComments(bookIndex) {
      commentRef.innerHTML += getNewCommentTemplate(bookIndex);
 }
 
-
 function addComment(bookIndex) {
     let inputRef = document.getElementById(`new-comment-${bookIndex}`);
     if (inputRef.value != "") {

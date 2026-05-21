@@ -18,6 +18,7 @@ function getBookTemplate(index){
               <p>${books[index].likes}</p>
               <img src="../assets/icons/heart.png" 
               alt="Heart" 
+              tabindex="0"
               class="img-class ${books[index].liked ? 'red-heart' : 'blank-heart'}"
               onclick="bookToFavorite(${index})"
               id="book-favorite-${index}"/>
@@ -65,6 +66,7 @@ function getNewCommentTemplate(bookIndex) {
             <img 
                 src="../assets/icons/paperplane.png" 
                 alt="Senden" 
+                tabindex="0"
                 class="img-class"
                 onclick="addComment(${bookIndex})"
             />
