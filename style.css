@@ -109,8 +109,18 @@
 .img-class {
     background-color: none;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.red-heart {
+    background-image: url('./assets/icons/Heart_red.png');
+}
+
+.blank-heart {
+    background-image: url('./assets/icons/heart.png');
 }
 
 .liked-section {

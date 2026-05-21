@@ -16,7 +16,11 @@ function getBookTemplate(index){
             </div>
             <div class="liked-section">
               <p>${books[index].likes}</p>
-              <img src="../assets/icons/heart.png" alt="Heart" class="img-class"/>
+              <img src="../assets/icons/heart.png" 
+              alt="Heart" 
+              class="img-class ${books[index].liked ? 'red-heart' : 'blank-heart'}"
+              onclick="bookToFavorite(${index})"
+              id="book-favorite-${index}"/>
             </div>
           </div>
           <div class="book-body-content-bottom">

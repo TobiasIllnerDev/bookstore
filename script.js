@@ -24,7 +24,7 @@ function renderComments(bookIndex) {
 }
 
 
-function addComment(bookIndex, commentIndex) {
+function addComment(bookIndex) {
     let inputRef = document.getElementById(`new-comment-${bookIndex}`);
 
     if (inputRef.value != "") {
@@ -50,4 +50,26 @@ function getFromLocalStorage() {
     if (myArr) {
         books = myArr;
     }
+}
+
+function bookToFavorite(index) {
+    let heartRef = document.getElementById(`book-favorite-${index}`);
+
+    if (books[index].liked == false) {
+        books[index].likes += 1;
+        books[index].liked = true;
+
+        heartRef.classList.remove("blank-heart");
+        heartRef.classList.add("red-heart");
+
+    } else {
+        books[index].likes -= 1;
+        books[index].liked = false;
+
+        heartRef.classList.remove("red-heart");
+        heartRef.classList.add("blank-heart");
+    }
+
+    saveToLocalStorage();
+    renderNotes();
 }
