@@ -2,7 +2,7 @@ function getBookTemplate(index){
     return `
     <section class="book-section">
         <div class="book-header">
-          <p id ="book-name">Überschrift</p>
+          <p>${books[index].name}</p>
         </div>
 
         <div class="book-img">
@@ -23,7 +23,7 @@ function getBookTemplate(index){
             <div class="p-element">
               <p>Author</p>
               <p>Erscheinungsdatum</p>
-              <p>Author</p>
+              <p>Genre</p>
             </div>
             <div class="p-element">
               <p>:</p>
