@@ -49,8 +49,13 @@ function getBookTemplate(index){
 function getCommentTemplate(bookIndex, commentIndex) {
     return `
         <div class="comment-text">
-            <div><p><strong>${books[bookIndex].comments[commentIndex].name}</strong></p></div>
-            <div><p>${books[bookIndex].comments[commentIndex].comment}</p></div>
+            <div class="comment-name">
+                <p><strong>${books[bookIndex].comments[commentIndex].name}</strong></p>
+            </div>
+
+            <div class="comment-message">
+                <p>${books[bookIndex].comments[commentIndex].comment}</p>
+            </div>
         </div>
     `;
 }
@@ -62,6 +67,7 @@ function getNewCommentTemplate(bookIndex) {
                 type="text" 
                 id="new-comment-${bookIndex}"
                 placeholder="Schreibe einen Kommentar..."
+                required
             />
             <img 
                 src="./assets/icons/paperplane.png" 

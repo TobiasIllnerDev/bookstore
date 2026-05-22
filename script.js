@@ -31,6 +31,10 @@ function addComment(bookIndex) {
             comment: inputRef.value
         });
     }
+    else {
+        alert("Bitte gibt einen Kommentar ein")
+    }
+
     saveToLocalStorage();
     renderNotes();
     inputRef.value = "";
