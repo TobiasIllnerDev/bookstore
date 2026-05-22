@@ -151,7 +151,6 @@
 .comment-text {
     display: flex;
     align-items: center;
-    text-align: flex-start;
     gap: 10px;
     padding: 5px;
 }
@@ -172,4 +171,41 @@ input[type=text] {
 
 input::placeholder {
     color: white;
+}
+ 
+@media screen and (max-width: 480px) {
+    .main-section {
+        margin: 5px;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+    .header-img > img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .header-img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .red-text {
+        font-size: 20px;
+    }
+
+    .red-money-text {
+        font-size: 16px;
+    }
+
+    .bigger-text {
+        font-size: 16px;
+    }
+
+    .small-text {
+        display: none;
+    }
+
 }
