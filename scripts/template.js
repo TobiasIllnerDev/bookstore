@@ -16,7 +16,7 @@ function getBookTemplate(index){
             </div>
             <div class="liked-section">
               <p>${books[index].likes}</p>
-              <img src="../assets/icons/heart.png" 
+              <img src="./assets/icons/heart.png" 
               alt="Heart" 
               tabindex="0"
               class="img-class ${books[index].liked ? 'red-heart' : 'blank-heart'}"
@@ -64,7 +64,7 @@ function getNewCommentTemplate(bookIndex) {
                 placeholder="Schreibe einen Kommentar..."
             />
             <img 
-                src="../assets/icons/paperplane.png" 
+                src="./assets/icons/paperplane.png" 
                 alt="Senden" 
                 tabindex="0"
                 class="img-class"
