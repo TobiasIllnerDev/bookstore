@@ -12,7 +12,7 @@ function getBookTemplate(index){
         <div class="book-body">
           <div class="book-body-content">
             <div>
-              <p class="red-money-text">${books[index].price} €</p>
+              <p class="red-money-text">${books[index].price.toLocaleString('de-DE', { minimumFractionDigits: 2 })} €</p>
             </div>
             <div class="liked-section">
               <p>${books[index].likes}</p>

@@ -25,19 +25,19 @@ function renderComments(bookIndex) {
 
 function addComment(bookIndex) {
     let inputRef = document.getElementById(`new-comment-${bookIndex}`);
+    
     if (inputRef.value != "") {
         books[bookIndex].comments.push({
             name: "Tobias",
             comment: inputRef.value
         });
+        saveToLocalStorage();
+        renderNotes();
+        inputRef.value = "";
+    } else {
+        inputRef.classList.add("input-error");
+        setTimeout(() => inputRef.classList.remove("input-error"), 1000);
     }
-    else {
-        alert("Bitte gibt einen Kommentar ein")
-    }
-
-    saveToLocalStorage();
-    renderNotes();
-    inputRef.value = "";
 }
 
 function saveToLocalStorage() {
