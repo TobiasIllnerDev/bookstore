@@ -217,8 +217,13 @@
 .comment-name {
     min-width: 100px;
     max-width: 100px;
-    flex-shrink: 0;
+}
+
+.comment-name p {
+    font-weight: bold;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .comment-message {

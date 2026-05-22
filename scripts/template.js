@@ -50,16 +50,14 @@ function getCommentTemplate(bookIndex, commentIndex) {
     return `
         <div class="comment-text">
             <div class="comment-name">
-                <p><strong>${books[bookIndex].comments[commentIndex].name}</strong></p>
+                <p>${books[bookIndex].comments[commentIndex].name}</p>
             </div>
-
             <div class="comment-message">
                 <p>${books[bookIndex].comments[commentIndex].comment}</p>
             </div>
         </div>
     `;
 }
-
 function getNewCommentTemplate(bookIndex) {
     return `
         <div class="new-comment">
